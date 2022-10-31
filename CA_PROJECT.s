@@ -1,7 +1,8 @@
 .section .data
-num: .word 26,11,4,3								@ This is where the input numbers are stored, num1 = 1431686349, num2 = 10 and rest 4 and 3 are dummy values, which will be overwritten by the program to store the Addition and Product respectively.
+@ This is where the input numbers are stored, num1 = 1431686349, num2 = 10 and rest 4 and 3 are dummy values, which will be overwritten by the program to store the Addition and Product respectively.
+@ 0b01000000000000111001100000000000 0b01000000000000000100000000000000 num1 = 25.5 and num2 = 2.5
+num: .word 1431686349,10,4,3								
 bias: .word 16383										@ Given Bias, as per question
-
 
 LastBitZero1:												@ This label is specifically for r4IsLess label
 LSL r3,#2														@ RENORMALIZATION STEP: "xy.Mantissa" is of the form "01.Mantissa" thus the FINAL RESULTANT Mantissa will be "Mantissa" removing "01"
