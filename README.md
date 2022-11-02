@@ -53,4 +53,5 @@ The code after loading should look something like this, and it is evident from t
 
 - The R1 register finally contains the address of multiplication result.
 - All other working registers (R0 to R9) are set to 0.
+
 ![Load_view](https://user-images.githubusercontent.com/79625246/199424051-fa1670ba-410e-4f94-a96c-540b4db6868e.png)
