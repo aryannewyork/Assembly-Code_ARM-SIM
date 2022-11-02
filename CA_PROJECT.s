@@ -1,7 +1,7 @@
 .section .data
 @ This is where the input numbers are stored, num1 = 1431686349, num2 = 10 and rest 4 and 3 are dummy values, which will be overwritten by the program to store the Addition and Product respectively.
-@ 0b01000000000000111001100000000000 0b01000000000000000100000000000000 num1 = 25.5 and num2 = 2.5
-num: .word 1431686349,10,4,3								
+@ num1 = 25.5 and num2 = 2.5 (in custom floating point representation)
+num: .word 0b01000000000000111001100000000000,0b01000000000000000100000000000000,4,3								
 bias: .word 16383										@ Given Bias, as per question
 
 LastBitZero1:												@ This label is specifically for r4IsLess label
